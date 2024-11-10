@@ -8,10 +8,8 @@ const b=arr.map(ele=>ele*3)
 
 const c = arr.map(ele=>ele>2)
 
-console.log(b);
-console.log(c);
-
-
+console.log("b :", b);
+console.log("c :",c);
 
 //--->Filter Function
 
@@ -25,7 +23,6 @@ console.log(c);
 
 // console.log(filteredList);
 // console.log("Filtered fruits are: "+ filteredFruits)
-
 
 const numArray=[1,2,3,4,5]
 
@@ -62,11 +59,11 @@ console.log(filFunc);
 const users=[
     {name:"nag",age:27},
     {name:"meghana",age:26},
-    {name:"shiva", age:3}
+    {name:"shiva", age:30}
 ]
 
 const op=users.reduce(function(acc,curr){
-    if(curr.age>25){
+    if(curr.age<30){
         acc.push(curr.name)
     }
     return acc
