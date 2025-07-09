@@ -22,7 +22,7 @@ const myPromise = new Promise(function(resolve, reject) {
     const y = 12;
 
  if(x == y){
-    resolve("inside iff");//if x is equal to y then reject() will be executed
+    resolve("inside iff");//if x is equal to y then resolve() will be executed
     console.log("printing and not waiting for resolve..")
  }else{
     reject("Inside else..");//if x is not equal to y then reject() will be executed

@@ -30,7 +30,7 @@ fetchData(false)
     console.error(error); // Output: Error: Promise is failed
   });
 
-//Uisng async and await
+//Using async and await
 
 // async function getData() {
 //     try {
@@ -41,4 +41,4 @@ fetchData(false)
 //     }
 //   }
   
-//   getData(true);
+  //getData();

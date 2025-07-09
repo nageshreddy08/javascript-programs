@@ -11,8 +11,6 @@ const c = arr.map(ele=>ele>2)
 console.log(b);
 console.log(c);
 
-
-
 //--->Filter Function
 
 // const fruits=["apple","mango","watermelon","grapes"]
@@ -25,7 +23,6 @@ console.log(c);
 
 // console.log(filteredList);
 // console.log("Filtered fruits are: "+ filteredFruits)
-
 
 const numArray=[1,2,3,4,5]
 

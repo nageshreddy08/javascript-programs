@@ -38,5 +38,5 @@ function isPalindromeNumber(num){
     }
 };
 
-isPalindromeNumber(233)
+isPalindromeNumber(333)
 

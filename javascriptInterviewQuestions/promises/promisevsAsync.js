@@ -25,6 +25,8 @@ function getData() {
 
   p2.then((res) => console.log(res));
 
+  p3.then((res)=>console.log(res));
+
   console.log("Hello Javascript"); //Here "Hello Javascript" is printed first and then the promise will
   //be resolve because of the setTimeout attached to resolve() function in Promise.
 }
@@ -35,28 +37,28 @@ console.log("Outside function");
 
 //
 //Promise Consumer
-/*
-async function asyncExample(){
-    console.log("Namaste Javascript");
-try{
-    const data1=await p1;
-    console.log("async code 1");
-    console.log(data1);
-  }
-  catch(error){ //handling rejection in async/await
-    console.log("Failed to get response");
-  }
 
-console.log("In the middle of promises");
+// async function asyncExample(){
+//     console.log("Namaste Javascript");
+// try{
+//     const data1=await p1;
+//     console.log("async code 1");
+//     console.log(data1);
+//   }
+//   catch(error){ //handling rejection in async/await
+//     console.log("Failed to get response");
+//   }
 
-    const data2= await p2;
-    console.log("async code 2");
-    console.log(data2);
+// console.log("In the middle of promises");
 
-    const data3= await p3;
-    console.log("async code 3");
-    console.log(data3);
- } */
+//     const data2= await p2;
+//     console.log("async code 2");
+//     console.log(data2);
+
+//     const data3= await p3;
+//     console.log("async code 3");
+//     console.log(data3);
+//  } 
 
 // asyncExample();
-console.log("After promises");
+// console.log("After promises");

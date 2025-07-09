@@ -34,19 +34,32 @@
 // let arr = [1, 1, 2, 2, 3, 3, 4, 5, 6, 1];
 // console.log(check_duplicate_in_array(arr));
 
-//using reduce function
-    let arr = ["apple", "mango",
-        "apple", "orange", "mango", "mango"];
+//Remove duplicates from an array using reduce function
+//     let arr = ["apple", "mango",
+//         "apple", "orange", "mango", "mango", "Grapes"];
 
-function removeDuplicates(arr) {
-  let unique = arr.reduce(function (acc, curr) {
-      if (!acc.includes(curr)){
-          acc.push(curr);
-      }
-      return acc;
-  }, []);
-  return unique;
+// function removeDuplicates(arr) {
+//   let unique = arr.reduce(function (acc, curr) {
+//       if (!acc.includes(curr)){
+//           acc.push(curr);
+//       }
+//       return acc;
+//   }, []);
+//   return unique;
+// }
+// console.log(removeDuplicates(arr));
+
+ function findDuplicatesFilter(arr) {
+  return arr.filter((item, index) => arr.indexOf(item) !== index);
 }
-console.log(removeDuplicates(arr));
 
+const numbers = [1, 2, 3, 2, 4, 1, 3];
+const duplicates = findDuplicatesFilter(numbers);
+console.log(duplicates); // Output: [2, 3]
 
+// const numbers = [1, 2, 3, 2, 4, 5, 3];
+
+//     let dups=numbers.filter((item,index)=>{
+//         numbers.indexOf(item)!==index
+//         console.log(numbers.indexOf(item));
+//     })

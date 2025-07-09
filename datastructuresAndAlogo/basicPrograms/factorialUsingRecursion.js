@@ -33,5 +33,5 @@ function findFactorialUsingRecursion(n){
         return n* findFactorialUsingRecursion(n-1);
     }
 }
-const result=findFactorialUsingRecursion(10);
+const result=findFactorialUsingRecursion(3);
 console.log(result);

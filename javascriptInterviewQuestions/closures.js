@@ -12,7 +12,6 @@ function x(){
     }
     //var a=25;
     y();
-    
     //console.log(a)
 }
 x();
@@ -28,4 +27,4 @@ function createGreeting(name) {
   }
   
   const greetJohn = createGreeting("John");
-  greetJohn(); // Output: Hell
+  greetJohn(); // Output: Hello, John

@@ -7,8 +7,8 @@ function restEx(...elements){
 restEx("a","b","c","d");
 
 //Expands array into individual elements..
-function spreadEx(e1,e2,e3,e4){
-    console.log( e1,e2,e3,e4);
+function spreadEx(e1,e2,e3){
+    console.log( e1,e2,e3);
 
 }
-spreadEx(...["abc","xyz"])
+spreadEx(...["abc","xyz",123])
