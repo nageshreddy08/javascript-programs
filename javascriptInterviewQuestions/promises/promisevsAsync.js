@@ -22,20 +22,20 @@ function getData() {
   p1.then((res) => console.log(res)).catch((rej) => console.log(rej));//If we dont use .catch(), it will throw "Unhandled Rejection error"
 
   //Promise will be moved to callback queue, when timer is completed it will be moved to call stack and gets executed
-
+console.log("In middle of promises")
   p2.then((res) => console.log(res));
 
   p3.then((res)=>console.log(res));
 
   console.log("Hello Javascript"); //Here "Hello Javascript" is printed first and then the promise will
-  //be resolve because of the setTimeout attached to resolve() function in Promise.
+  //be resolved because of the setTimeout attached to resolve() function in Promise.
 }
 
 getData();
 console.log("Outside function");
 
 
-//
+
 //Promise Consumer
 
 // async function asyncExample(){

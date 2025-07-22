@@ -29,6 +29,7 @@ const myPromise = new Promise(function(resolve, reject) {
  }
 });
 console.log("outside");
+
 myPromise
 .then(function(){
   console.log("Success");

@@ -2,7 +2,7 @@ const promise = new Promise((resolve, reject) => {
     console.log(1);
     setTimeout(() => {
       console.log("timerStart");
-      reject("Failed")
+      reject("Failed")//since we use reject before resolve, it prints code inside resolve
       resolve("success");
       //reject("Failed");  //even though we used reject here, it will print "success" because we used resolve() before reject().
       console.log("timerEnd");

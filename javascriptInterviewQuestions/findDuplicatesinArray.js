@@ -34,28 +34,29 @@
 // let arr = [1, 1, 2, 2, 3, 3, 4, 5, 6, 1];
 // console.log(check_duplicate_in_array(arr));
 
-//Remove duplicates from an array using reduce function
-//     let arr = ["apple", "mango",
-//         "apple", "orange", "mango", "mango", "Grapes"];
-
-// function removeDuplicates(arr) {
-//   let unique = arr.reduce(function (acc, curr) {
-//       if (!acc.includes(curr)){
-//           acc.push(curr);
-//       }
-//       return acc;
-//   }, []);
-//   return unique;
-// }
-// console.log(removeDuplicates(arr));
-
- function findDuplicatesFilter(arr) {
-  return arr.filter((item, index) => arr.indexOf(item) !== index);
+//-->Remove duplicates from an array using reduce function
+    let arr = ["apple", "mango",
+        "apple", "orange", "mango", "mango", "Grapes"];
+let arr2=[2,3,4,2,5,4]
+function removeDuplicates(arr) {
+  let unique = arr2.reduce(function (acc, curr) {
+      if (!acc.includes(curr)){
+          acc.push(curr);
+      }
+      return acc;
+  }, []);
+  return unique;
 }
+console.log(removeDuplicates(arr2));
 
-const numbers = [1, 2, 3, 2, 4, 1, 3];
-const duplicates = findDuplicatesFilter(numbers);
-console.log(duplicates); // Output: [2, 3]
+  //--->Find duplicated using filter
+//  function findDuplicatesFilter(arr) {
+//   return arr.filter((item, index) => arr.indexOf(item) !== index);
+// }
+
+// const numbers = [1, 2, 3, 2, 4, 1, 3];
+// const duplicates = findDuplicatesFilter(numbers);
+// console.log(duplicates); // Output: [2, 3]
 
 // const numbers = [1, 2, 3, 2, 4, 5, 3];
 
@@ -63,3 +64,25 @@ console.log(duplicates); // Output: [2, 3]
 //         numbers.indexOf(item)!==index
 //         console.log(numbers.indexOf(item));
 //     })
+
+//--->Find duplicates from an array using Reduce method
+// function findDuplicates(arr) {
+//   const seen = {};
+  
+//   const duplicates = arr.reduce((acc, current) => {
+//     if (seen[current]) {
+//       if (!acc.includes(current)) {
+//         acc.push(current);
+//       }
+//     } else {
+//       seen[current] = true;
+//     }
+//     return acc;
+//   }, []);
+  
+//   return duplicates;
+// }
+// const numbers = [1, 2, 3, 4, 5, 2, 3, 6, 1];
+// const result = findDuplicates(numbers);
+
+// console.log(result); // Output: [2, 3, 1]

@@ -1,5 +1,5 @@
 // function x(){
-//     var a=10;
+//     const a=10;//here we can use var/let/const
 //     function y(){
 //         console.log(a);
 //     }
@@ -8,15 +8,26 @@
 
 // x();
 
-function createGreeting(name) {
-    const greeting = "Hello, " + name; // Outer function variable
+// function createGreeting(name) {
+//     const greeting = "Hello " + name; // Outer function variable
   
-    function greet() {
-      console.log(greeting); // Inner function accessing outer variable
-    }
+//     function greet() {
+//       console.log(greeting); // Inner function accessing outer variable
+//     }
   
-    return greet();
-  }
+//     return greet();
+//   }
 
-  createGreeting("Nagesh")
+//   createGreeting("Nagesh")
+  //-->Ex-3 Closures with setTimeout
+
+  function c(){
+    for(var i=0;i<=5;i++){
+      setTimeout(()=>{
+        console.log(i);
+      },1*1000)
+    }
+    console.log("Hii");
+  }
+  c();
   

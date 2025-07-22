@@ -9,6 +9,7 @@ const b=arr.map(ele=>ele*3)
 const c = arr.map(ele=>ele>2)
 
 console.log(b);
+
 console.log(c);
 
 //--->Filter Function
@@ -59,9 +60,10 @@ console.log(filFunc);
 const users=[
     {name:"nag",age:27},
     {name:"meghana",age:26},
-    {name:"shiva", age:3}
+    {name:"shiva", age:3},
+    {name:"preetham",age:27}
 ]
-
+//To filter the users above age>25
 const op=users.reduce(function(acc,curr){
     if(curr.age>25){
         acc.push(curr.name)
@@ -69,3 +71,22 @@ const op=users.reduce(function(acc,curr){
     return acc
 },[])
 console.log(op)
+
+//To find the count of age of persons ex:{27:2,26:1,3:1}
+
+
+const count=users.reduce(function(acc,curr){
+    if(acc[curr.age]){
+        acc[curr.age]=++acc[curr.age];
+
+    }
+    else{
+        acc[curr.age]=1;
+    }
+    return acc;
+
+},{})
+console.log(count);
+
+// var Language = ['React','Javascript','HTML','CSS'];
+// Language.forEach((language)=>console.log(language));

@@ -25,8 +25,10 @@ function isPalindromeNumber(num){
     let reversedNumber=0;
     while(num>0){
         let remainder=num%10;
+        console.log(remainder);
         reversedNumber=remainder+reversedNumber*10;
         num=Math.floor(num/10);
+        console.log(num)
     } 
     
     if(tempNum==reversedNumber){
@@ -38,5 +40,5 @@ function isPalindromeNumber(num){
     }
 };
 
-isPalindromeNumber(333)
+isPalindromeNumber(633)
 

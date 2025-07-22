@@ -9,7 +9,6 @@ const p2=new Promise((resolve,reject) => {
         setTimeout(()=>{
            resolve("Inside P2 code");//If we don't handle reject by using .catch(), it will throw an error.
         },5000)
-
 })
 
 function getData(){
