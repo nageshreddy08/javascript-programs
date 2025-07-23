@@ -1,6 +1,6 @@
 
 // function factorial(n)
-// //using normal approach//
+// //using normal-for loop approach//
 // {
 //     let fact=1;
 
@@ -19,7 +19,7 @@
 // //return 1;
 
 // }
-// factorial(4)
+// factorial(1)
 
 //----------------//
 

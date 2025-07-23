@@ -1,4 +1,4 @@
-
+//program to find frequency of characters in a string
 let str="nageswara"
 let freq={};
 for(let char of str){

@@ -9,7 +9,8 @@ function isPrime(num){
         return false;
     }
 
-    for(let i=2;i<=num/2;i++){
+    for(let i=2;i<=num/2;i++){//here we can use i< Math.sqrt(num)
+
         if(num%i==0){
             return false;
         }
@@ -21,10 +22,13 @@ function isPrime(num){
 function printPrimeNumbers(n){
     //This will be useful to print prime numbers in a given interval
 let lowerLimit=1;
-let upperLimit=50
-    for(let i=lowerLimit;i<=upperLimit;i++){
+let upperLimit=n;
+let count=0;
+
+for(let i=lowerLimit;i<=upperLimit;i++){
         if(isPrime(i)){
             console.log(i);
+            count++;
         }
     }
 }

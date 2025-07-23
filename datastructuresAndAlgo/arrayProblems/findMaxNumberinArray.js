@@ -16,7 +16,7 @@
 // console.log(findMaxNum([2,1,23,5,2,6]))
 
 //using reduce method
-let arr=[3,4,2,6,77,22,111]
+let arr=[3,4,2,6,77,22,11]
 
 let maxNum=arr.reduce((acc,curr)=>{
     if(arr.length===0) return null;
